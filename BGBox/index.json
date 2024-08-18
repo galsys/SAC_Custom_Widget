@@ -1,0 +1,118 @@
+{
+    "eula": "",
+    "vendor": "BSG",
+    "license": "",
+    "id": "com.bsg.sac.bgbox.headerbox",
+    "version": "1.0.0",
+    "name": "BSG Backgound Box Area Widget",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzklEQVQ4jWNgoBAwkqLYOLGjguH//1RGxv+7z8yvymBgYGBgIcm2//8lGRgZlP7/Z5CDiTGRYgA2QLEBOL2gFVrPxsXDYcfAwMDw7cuPQ9dWN/4iyQBebi75vwz/dkPZagwMDLexqaOeF4wT2jcyMjL4Mfz/33tmQVUJsQYgueA/K4RmZCXFBQMfjQNvADwWGBkZHv3/z3CPgZHxOQMDAwPjv9/fGJiZ7sLZDAwM/xkZnzP8/3+PkZHhEaUWwwGjSWL7f0oMYGFgYFCmxAAACtUz95booNoAAAAASUVORK5CYII=",
+    "newInstancePrefix": "BGBoxWidget",
+    "description": "BSG Backgound Box Area Widget",
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-bsg-sac-bgbox_headerbox-main",
+        "url": "/main.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      },
+      {
+        "kind": "builder",
+        "tag": "com-bsg-sac-bgbox_headerbox-builder",
+        "url": "/builder.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+      "width": {
+        "type": "integer",
+        "default": 592
+      },
+      "height": {
+        "type": "integer",
+        "default": 416
+      },
+      "header_height": {
+        "type": "integer",
+        "default": 48
+      },
+      "gap": {
+        "type": "integer",
+        "default": 0
+      },
+      "header_color_type": {
+        "type": "string",
+        "default": "single"
+      },
+      "header_color": {
+        "type": "string",
+        "default": "#763D54"
+      },
+      "header_color1": {
+        "type": "string",
+        "default": "#763D54"
+      },
+      "header_color2": {
+        "type": "string",
+        "default": "#251836"
+      },
+	  "header_color3": {
+        "type": "string",
+        "default": "#251836"
+      },
+      "offset1": {
+        "type": "integer",
+        "default": 10
+      },
+      "offset2": {
+        "type": "integer",
+        "default": 50
+      },
+      "body_color": {
+        "type": "string",
+        "default": "#3B1E3E"
+      },
+      "body_color_opacity": {
+        "type": "string",
+        "default": "1"
+      },
+      "header_radius": {
+        "type": "integer",
+        "default": 30
+      },
+      "body_radius": {
+        "type": "integer",
+        "default": 30
+      }
+    },
+    "methods":{
+        "setHeader_height": {
+        "description": "Set header height",
+        "parameters": [
+            {
+            "name": "value",
+            "type": "integer",
+            "description": "header_height"
+            }
+        ]
+        }
+    },
+    "events":{},
+    "dataBindings": {
+      "dataBinding": {
+        "feeds": [
+          {
+            "id": "dimensions",
+            "description": "Dimensions",
+            "type": "dimension"
+          },
+          {
+            "id": "measures",
+            "description": "Measures",
+            "type": "mainStructureMember"
+          }
+        ]
+      }
+    }
+  }
